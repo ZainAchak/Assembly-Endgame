@@ -206,64 +206,20 @@ export default function Main() {
                 <div 
                     style={{backgroundColor:languageDie.current[counter.current].color}} 
                     className={styles.languageResponse}>
-                    <h3>{languageDie.current[counter.current].value}</h3>
+                    {gameWon.current ? <h3>Congrats 🎉 You saved the world from Assembly</h3> : <h3>{languageDie.current[counter.current].value}</h3>}
                 </div>
                 
                 <div className={styles.languages}>
                     {languagesDisplay}
-                    {/* <div className={styles.landDesc}>HTML</div>
-                    <div className={styles.landDesc}>CSS</div>
-                    <div className={styles.landDesc}>Javascript</div>
-                    <div className={styles.landDesc}>React</div>
-                    <div className={styles.landDesc}>Typescript</div>
-                    <div className={styles.landDesc}>Node.js</div>
-                    <div className={styles.landDesc}>Python</div>
-                    <div className={styles.landDesc}>Ruby</div>
-                    <div className={styles.landDesc}>Assembly</div> */}
                 </div>
 
                 <div className={styles.wordBox}>
                     {wordBoxDisplay}
-                    {/* <span className={styles.word}>Z</span>
-                    <span className={styles.word}>A</span>
-                    <span className={styles.word}>I</span>
-                    <span className={styles.word}>N</span>
-                    <span className={styles.word}>U</span>
-                    <span className={styles.word}>L</span>
-                    <span className={styles.word}>L</span>
-                    <span className={styles.word}>A</span>
-                    <span className={styles.word}>H</span> */}
 
                 </div>
 
                 <div className={styles.keyboard}>
                     {keyboardDisplay}
-                    {/* <button className={styles.keyboardBtn}>A</button>
-                    <button className={styles.keyboardBtn}>B</button>
-                    <button className={styles.keyboardBtn}>C</button>
-                    <button className={styles.keyboardBtn}>D</button>
-                    <button className={styles.keyboardBtn}>E</button>
-                    <button className={styles.keyboardBtn}>F</button>
-                    <button className={styles.keyboardBtn}>G</button>
-                    <button className={styles.keyboardBtn}>H</button>
-                    <button className={styles.keyboardBtn}>I</button>
-                    <button className={styles.keyboardBtn}>J</button>
-                    <button className={styles.keyboardBtn}>K</button>
-                    <button className={styles.keyboardBtn}>L</button>
-                    <button className={styles.keyboardBtn}>M</button>
-                    <button className={styles.keyboardBtn}>N</button>
-                    <button className={styles.keyboardBtn}>O</button>
-                    <button className={styles.keyboardBtn}>P</button>
-                    <button className={styles.keyboardBtn}>Q</button>
-                    <button className={styles.keyboardBtn}>R</button>
-                    <button className={styles.keyboardBtn}>S</button>
-                    <button className={styles.keyboardBtn}>T</button>
-                    <button className={styles.keyboardBtn}>U</button>
-                    <button className={styles.keyboardBtn}>V</button>
-                    <button className={styles.keyboardBtn}>W</button>
-                    <button className={styles.keyboardBtn}>X</button>
-                    <button className={styles.keyboardBtn}>Y</button>
-                    <button className={styles.keyboardBtn}>Z</button> */}
                 </div>
                 {gameOver && <button onClick={restartGame}>Restart</button>}
             </main>

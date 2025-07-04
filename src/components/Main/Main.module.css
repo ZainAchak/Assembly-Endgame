@@ -3,9 +3,12 @@ main{
     flex-direction: column;
     align-items: center; */
     /* background-color: rgb(255, 255, 255); */
-    height: 100vh;
-    width: 550px;
+    /* height: 100vh; */
+    /* max-width: 750px;
+    max-height: 685px; */
+    /* background-color: gray; */
     /* gap: 2rem; */
+    margin: 0 auto;
 }
 
 .languageResponse{
@@ -29,7 +32,6 @@ main{
 }
 
 .landDesc{
-    /* background-color: rebeccapurple; */
     color: var(--primary-fontColor);
     padding: 6px 15px;
     border-radius: 5px;
@@ -77,11 +79,12 @@ main{
 }
 
 .keyboard{
+    /* background-color: rebeccapurple; */
     width: fit-content;
     display: grid;
     grid-template-columns: repeat(8, auto);
-    grid-auto-flow: row;
-    place-content: center;
+    /* grid-auto-flow: row;
+    place-content: center; */
     gap: 10px;
     margin: 0 auto;
 }
@@ -172,4 +175,37 @@ main > button:active {
     font-size: 2.5rem;
     margin: 0 auto;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 549px) {
+    .languageResponse {
+        max-width: 400px;
+        margin: 1rem auto;
+        overflow: hidden;
+    }
+
+    .languageResponse > h3{
+        text-wrap: wrap;
+        text-align: center;
+        }
+    
+    .languages{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .keyboard{
+        grid-template-columns: repeat(6, auto);
+    }
+
+    .keyboardBtn:nth-last-child(2) {
+        grid-column-start: 3;
+    }
+
+    .keyboardBtnOff:nth-last-child(2) {
+        grid-column-start: 3;
+    }
+
 }

@@ -18,12 +18,17 @@
 
 body{
   background-color: var(--primary-backgroundColor);
-  font-family: var(--primary-font)
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #root{
-  background-color: var(--primary-color);
-  height: 100vh;
+  background-color: var(--primary-backgroundColor);
+  /* height: 100vh; */
+  max-width: 600px;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
