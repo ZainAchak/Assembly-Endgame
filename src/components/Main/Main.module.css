@@ -1,0 +1,175 @@
+main{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* background-color: rgb(255, 255, 255); */
+    height: 100vh;
+    width: 550px;
+    /* gap: 2rem; */
+}
+
+.languageResponse{
+    background-color: blueviolet;
+    padding: 2rem;
+    margin: 0 0.1rem;
+    text-wrap: nowrap;
+    border-radius: 0.5rem;
+    color: var(--primary-fontColor);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 3rem;
+}
+
+.landDesc{
+    /* background-color: rebeccapurple; */
+    color: var(--primary-fontColor);
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.landDescOff{
+    background-color: gray !important;
+    position: relative;
+    color: var(--primary-fontColor);
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.landDescOff > span{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wordBox{
+    /* background-color:red; */
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 1rem;
+}
+
+.word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 2px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.keyboard{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-auto-flow: row;
+    place-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.keyboardBtn{
+    height: 50px;
+    width: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: orange;
+    font-size: 1.3rem;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    box-shadow: 0px 2px 4px rgb(255, 255, 255);
+    transition: 
+           background-color 0.2s ease,
+           box-shadow 0.2s ease,
+           transform 0.4s ease
+}
+
+.keyboardBtn:hover{
+    background-color: rgba(255, 166, 0, 0.76);
+    transform: rotate(10deg) scale(1.5);
+    box-shadow: 2px 2px 4px rgb(0, 183, 255);
+    border: 2px solid rgba(0, 193, 252, 0.877);
+}
+
+.keyboardBtn:active{
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+.keyboardBtn:nth-last-child(2) {
+  grid-column-start: 4;
+}
+
+
+.keyboardBtnOff{
+    height: 50px;
+    width: 50px;
+    color: rgb(192, 190, 190);
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: rgb(100, 99, 97);
+    font-size: 1.3rem;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    box-shadow: 0px 2px 4px rgb(255, 255, 255);
+}
+
+.keyboardBtnOff:nth-last-child(2) {
+  grid-column-start: 4;
+}
+
+main > button {
+  display: block;
+  margin: 2rem auto;
+  padding: 12px 28px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background-color: blueviolet;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: 
+    transform 0.2s ease, 
+    background-color 0.3s ease, 
+    box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+main > button:hover {
+  background-color: #9c27b0;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5);
+}
+
+main > button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.answer{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}

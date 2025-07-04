@@ -1,0 +1,18 @@
+/* header{
+    background-color: red;
+} */
+
+.title{
+    color:var(--primary-fontColor);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.description{
+    color: var(--primary-descriptionColor);
+    max-width: 550px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 2.5rem;
+}
