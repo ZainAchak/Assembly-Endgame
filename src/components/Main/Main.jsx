@@ -86,7 +86,7 @@ export default function Main() {
     //------------------------------- INITIALIZATIONS ---------------------------------
     const { width, height } = useWindowSize()
     const word = useRef(generate({ maxLength: 10 }).toUpperCase())
-    console.log(word.current)
+    // console.log(word.current)
     const counter = useRef(0)
 
     const userInputIndexes = useRef([]);
@@ -146,7 +146,7 @@ export default function Main() {
 
         if(word.current.indexOf(keyboardKey) === -1){
             counter.current = counter.current + 1
-            console.log(counter.current)
+            // console.log(counter.current)
             if(counter.current <= 8){
                 setLanguages(prev => prev.map((languageItem,index)=> (
                     index === counter.current - 1 ? {...languageItem,show:false} : languageItem
